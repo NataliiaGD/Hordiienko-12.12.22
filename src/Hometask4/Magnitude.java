@@ -2,7 +2,7 @@ package Hometask4;
 
 public class Magnitude {
     public static void main(String[] args) {
-        System.out.println(compareMagnitude(-9,-8 ));
+        System.out.println(compareMagnitude(-9,-7 ));
     }
 
     public static String compareMagnitude (int a,int b){
