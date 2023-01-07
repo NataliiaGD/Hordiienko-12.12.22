@@ -7,15 +7,9 @@ public class Task2 {
     public static void main(String[] args) {
 
         int [] intArray = generateIntArray(10);
-        for(int i = 0;i < intArray.length; i++){
-            if(intArray[i] % 2 == 0){
-                intArray[i] = 0;
-            }
-        }
-        System.out.println(Arrays.toString(intArray));
+        System.out.println(Arrays.toString(changeEvenNumbersToZero(intArray)));
 
     }
-
 
     public static int randomNumbers (){
         Random random = new Random();
@@ -28,5 +22,13 @@ public class Task2 {
             intArray[i] = randomNumbers();
         }
         return intArray;
+    }
+
+    public static int [] changeEvenNumbersToZero(int [] intArray){
+        for(int i = 0;i < intArray.length; i++){
+            if(intArray[i] % 2 == 0){
+                intArray[i] = 0;
+            }
+        } return intArray;
     }
 }

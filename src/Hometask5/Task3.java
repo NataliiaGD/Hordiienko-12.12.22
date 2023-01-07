@@ -6,12 +6,7 @@ import java.util.Random;
 public class Task3 {
     public static void main(String[] args) {
         int [] intArray = generateIntArray(10);
-        double sum = 0;
-        for(int i = 0;i < intArray.length; i++) {
-            sum = sum + intArray[i];
-        }
-        double average = sum/intArray.length;
-        System.out.println(average);
+        System.out.println(calculateAverage(intArray));
 
     }
 
@@ -29,10 +24,13 @@ public class Task3 {
         return intArray;
     }
 
-
-
-
-
-
+    public static double calculateAverage(int [] intArray){
+        double sum = 0;
+        for(int i = 0;i < intArray.length; i++) {
+            sum = sum + intArray[i];
+        }
+        double average = sum/intArray.length;
+        return average;
+    }
 
 }
