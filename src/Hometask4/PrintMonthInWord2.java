@@ -3,6 +3,7 @@ package Hometask4;
 public class PrintMonthInWord2 {
     public static void main(String[] args) {
         System.out.println(printMonthInWord(14));
+
     }
 
     public static String printMonthInWord(int dayOfMonth) {
