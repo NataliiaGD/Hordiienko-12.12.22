@@ -2,7 +2,7 @@ package Hometask7;
 
 import java.util.Objects;
 
-public class Person implements Callable {
+public  class Person implements Callable {
     private String name;
     private String surname;
     private String city;
@@ -52,7 +52,8 @@ public class Person implements Callable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return name.equals(person.name) && surname.equals(person.surname) && city.equals(person.city) && number.equals(person.number);
+        return name.equals(person.name) && surname.equals(person.surname) && city.equals(person.city)
+                && number.equals(person.number);
     }
 
     @Override

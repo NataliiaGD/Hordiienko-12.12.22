@@ -4,7 +4,7 @@ public interface Callable {
     public String call();
 
 
-//    public static String call(Person person1, Person person3) {
+//    public static String call(Person human1, Person human2) {
 //        return null;
 //    }
 
