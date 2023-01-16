@@ -1,7 +1,6 @@
 package Hometask7;
 
 
-import static Hometask7.Person.call;
 
 public class Program {
     public static void main(String[] args) {
@@ -20,14 +19,16 @@ public class Program {
         System.out.println(person3.call());
 
         // person calls the same person
-        System.out.println(call(person1,person1));
+        System.out.println(person1.call(person1));;
+
+
 
         // person calls the same person
-        System.out.println(call(person3,person4));
+        System.out.println(person3.call(person4));
 
 
         // person 3 makes a call to person2
-        System.out.println(call(person3,person2 ));
+        System.out.println(person3.call(person2));
 
         // Director makes a call to a person
         System.out.println(director1.call(person2));
@@ -35,6 +36,12 @@ public class Program {
 
         //Overrided method call in class Director
         System.out.println(director1.call());
+
+
+
+
+
+
 
 
 

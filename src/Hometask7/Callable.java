@@ -9,8 +9,6 @@ public interface Callable {
 
 
 
-    public static String call(Person human1, Person human2) {
-        return null;
-    }
+
 
 }
