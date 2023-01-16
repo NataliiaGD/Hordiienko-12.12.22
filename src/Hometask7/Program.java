@@ -33,7 +33,7 @@ public class Program {
         System.out.println(director1.call(person2));
 
 
-        //Overidend method call in class Direcot
+        //Overrided method call in class Director
         System.out.println(director1.call());
 
 
