@@ -67,6 +67,14 @@ public  class Person implements Callable {
         return str1;
     }
 
+    @Override
+    public String call(Person human1) {
+        String str1 = "The person " + getName() + " calls " + human1.getName();
+
+        return str1;
+    }
+
+
     public static String call(Person human1, Person human2){
         if(human1.equals(human2)){
             return "You can't call yourself";

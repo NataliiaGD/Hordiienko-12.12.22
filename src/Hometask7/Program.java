@@ -33,6 +33,10 @@ public class Program {
         System.out.println(director1.call(person2));
 
 
+        //Overidend method call in class Direcot
+        System.out.println(director1.call());
+
+
 
 
 
