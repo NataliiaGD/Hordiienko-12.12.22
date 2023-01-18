@@ -78,11 +78,13 @@ public  class Person implements Callable {
         }
     }
 
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", city='" + city + '\'' +
+                ", number='" + number + '\'' +
+                '}';
+    }
 }
