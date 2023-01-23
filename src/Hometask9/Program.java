@@ -17,27 +17,20 @@ public class Program {
 
         students.remove(1);
 
-
-        //System.out.println(students);
         printStudents(students, 2);
-
     }
 
-    public static void printStudents(List<Student> students, int course){
-        Iterator<Student> studs = students.iterator();
-        while(studs.hasNext()){
-             int course1 = studs.next().getCourse();
-
-             if(course != course1){
-                 studs.remove();
-             }
+    public static void printStudents(ArrayList<Student> students, int currentCourse) {
+        Iterator<Student> stud = students.iterator();
+        while (stud.hasNext()) {
+            Student student = stud.next();
+            int course = student.getCourse();
+            if (course != currentCourse) {
+                stud.remove();
+            } else {
+                String name = student.getName();
+                System.out.println(name);
+            }
         }
-        studs = students.iterator();
-
-        while(studs.hasNext()){
-            String name = studs.next().getName();
-            System.out.println(name);
-        }
-
     }
 }
