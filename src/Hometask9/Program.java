@@ -18,7 +18,6 @@ public class Program {
         students.remove(1);
 
         printStudents(students, 2);
-
     }
 
     public static void printStudents(ArrayList<Student> students, int currentCourse) {
