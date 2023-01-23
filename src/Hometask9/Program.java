@@ -18,6 +18,7 @@ public class Program {
         students.remove(1);
 
         printStudents(students, 2);
+
     }
 
     public static void printStudents(ArrayList<Student> students, int currentCourse) {
@@ -25,9 +26,7 @@ public class Program {
         while (stud.hasNext()) {
             Student student = stud.next();
             int course = student.getCourse();
-            if (course != currentCourse) {
-                stud.remove();
-            } else {
+            if (course == currentCourse) {
                 String name = student.getName();
                 System.out.println(name);
             }
