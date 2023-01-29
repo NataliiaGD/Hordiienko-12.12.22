@@ -12,9 +12,11 @@ public class Program {
         zoo.put(4,"pig");
         zoo.put(5,"straus");
 
-        sortValues(zoo);
+        sortByValues(zoo);
     }
-    private static void sortValues(Map<Integer, String> zoo) {
-        zoo.values().stream().sorted().forEach(System.out::println);
+
+    private static void sortByValues(Map<Integer, String> zoo) {
+        zoo.entrySet().stream().sorted(Map.Entry.comparingByValue())
+                .forEach(System.out::println);
     }
 }
